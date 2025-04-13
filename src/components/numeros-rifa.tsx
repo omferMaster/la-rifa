@@ -188,6 +188,7 @@ export default function NumberTable() {
             Nombre: reg.nombre,
             Teléfono: reg.telefono,
             Pago: reg.pago ? "Sí" : "No"
+            
         }));
 
         const ws = XLSX.utils.json_to_sheet(dataWithIds);
@@ -363,11 +364,13 @@ export default function NumberTable() {
                 </DialogContent>
             </Dialog>
             </section>
-            <section className="p-6 bg-rose-100 mt-50 rounded-lg shadow-lg max-w-xs text-center">
+            <section className="p-6 bg-rose-100 mt-25 rounded-lg shadow-lg max-w-xs text-center">
                 <h2 className="text-2xl font-bold text-rose-600">Información de la Rifa</h2>
                 <p className="mt-4 text-gray-700">Participa en esta gran rifa para recaudar fondos y ganar <strong>$500.000</strong></p>
                 <p className="mt-2 text-gray-700">Cada puesto tiene un precio de $20.000.</p>
                 <p className="mt-2 text-gray-700">Juega para el día <strong>12 de abril</strong> con la <strong>Lotería de Boyacá</strong>.</p>
+                <p className="mt-2 text-gray-700">Para realizar tu pago puedes hacerlo mediante <strong>Transferencia</strong> al siguiente número</p>
+                <p className="mt-2 text-gray-700"><strong>Nequi: 311 665 1620</strong> </p>
             </section>
             </div>
         )
